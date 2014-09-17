@@ -25,5 +25,25 @@ module MartianRobots
         expect { World.new 30, 40}.to_not raise_error
       end
     end
+
+    describe '#width' do
+      it 'returns the width' do
+        expect(subject.width).to eq(width)
+      end
+    end
+
+    describe '#height' do
+      it 'returns the height' do
+        expect(subject.height).to eq(height)
+      end
+    end
+
+    describe '#grid' do
+      subject { World.new(30, 40).grid }
+      
+      it 'creates a 2-dimensional array from height and width values' do
+        expect(subject[0][0]).to eq ("")
+      end
+    end
   end
 end

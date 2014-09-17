@@ -4,4 +4,4 @@ module MartianRobots
   # Your code goes here...
 end
 
-require_relative "world.rb"
+require_relative "./martian_robots/world.rb"
