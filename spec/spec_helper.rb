@@ -1,0 +1,1 @@
+require_relative "../lib/martian_robots.rb"
